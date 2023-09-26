@@ -9,6 +9,7 @@ public class mainCliente {
         Cliente clie2 = new Cliente("paco", "0002", 2000);
         Cliente clie3 = new Cliente("victor", "0003", 4000);
         Cliente clie4 = new Cliente("javiera", "0004", 1000);
+        Cliente clie5 = new Cliente("javiera", "0004", 1000);
 
         Set<Cliente> clientesBanco = new HashSet<>();
 
@@ -16,6 +17,7 @@ public class mainCliente {
         clientesBanco.add(clie2);
         clientesBanco.add(clie3);
         clientesBanco.add(clie4);
+        clientesBanco.add(clie5);
 
         for (Cliente clieBanco: clientesBanco) {
             System.out.println(clieBanco.getNombre()+ " "+clieBanco.getNumeroCuenta()+" "+clieBanco.getSaldo());

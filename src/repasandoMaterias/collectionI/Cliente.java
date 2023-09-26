@@ -1,5 +1,7 @@
 package repasandoMaterias.collectionI;
 
+import java.util.Objects;
+
 public class Cliente {
     private String nombre;
     private String numeroCuenta;
@@ -33,5 +35,19 @@ public class Cliente {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    //para no hayan duplicados en el set
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cliente cliente = (Cliente) o;
+        return Objects.equals(numeroCuenta, cliente.numeroCuenta);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numeroCuenta);
     }
 }
