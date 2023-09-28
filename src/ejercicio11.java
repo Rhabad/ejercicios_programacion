@@ -1,5 +1,3 @@
-package repasandoMaterias;
-
 public class ejercicio11 {
     public static void main (String[] args){
         /* Enunciado: Crea una función que reciba dos cadenas como parámetro
